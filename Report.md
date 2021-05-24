@@ -1,13 +1,8 @@
 # Project 2: Continuous Control
 
-Author: [Aman Dalmia](http://github.com/dalmia) 
+The project applies policy-based RL methods to learn the optimal policy in a setting using a Unity environment, in which a double-jointed arm can move to target locations. The agent get a reward of +0.1 for each step that the hand is in the goal location such that the agent aims to maintain its position at the target location for as long as possible.
 
-The project demonstrates how policy-based methods can be used to learn the optimal policy in a model-free Reinforcement Learning setting using a Unity environment, in which a double-jointed arm can move to target locations. A reward of +0.1 is provided for each step that the agent's hand is in the goal location. Thus, the goal of the agent is to maintain its position at the target location for as many time steps as possible.
-
-The observation space consists of 33 variables corresponding to position, rotation, velocity, and angular velocities of the arm. Each action is a vector with four numbers, corresponding to torque applicable to two joints. Every entry in the action vector is a number between -1 and 1. An agent choosing actions randomly can be seen in motion below:
-
-![random agent](results/random_agent.gif) 
-
+The observation space consists of 33 variables corresponding to position, rotation, velocity, and angular velocities of the arm. Each action is a vector with four numbers, corresponding to torque applicable to two joints. Every entry in the action vector is a number between -1 and 1.
 
 
 The following report is written in four parts:
