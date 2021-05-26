@@ -41,4 +41,7 @@ The best performance was achieved by **DDPG** where the reward of +30 was achiev
 
 - General optimization techniques like cyclical learning rates and warm restarts could be useful as well.
 
-  
+
+## Hyperparameters
+
+
