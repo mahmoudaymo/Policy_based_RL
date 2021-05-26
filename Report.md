@@ -42,16 +42,7 @@ The best performance was achieved by **DDPG** where the reward of +30 was achiev
 - General optimization techniques like cyclical learning rates and warm restarts could be useful as well.
 
 
-## Hyperparameters
-
-- BUFFER_SIZE = int(1e5)  # replay buffer size
-- BATCH_SIZE = 128       # minibatch size
-- GAMMA = 0.99            # discount factor
-- TAU = 1e-3              # for soft update of target parameters
-- LR_ACTOR = 1e-4         # learning rate of the actor
-- LR_CRITIC = 3e-4        # learning rate of the critic
-- WEIGHT_DECAY = 0.0001   # L2 weight decay
-- LEAKINESS = 0.01
+## Actor-Critic Network Architecture and Hyperparameters
 
 The **Actor Neural Networks** use the following architecture :
 
@@ -72,3 +63,14 @@ Input nodes (33)
         -> Fully Connected Layer (128+4 nodes, Relu activation) 
           -> Ouput node (1 node, no activation)
 ```
+
+
+- BUFFER_SIZE = int(1e5)  # replay buffer size
+- BATCH_SIZE = 128       # minibatch size
+- GAMMA = 0.99            # discount factor
+- TAU = 1e-3              # for soft update of target parameters
+- LR_ACTOR = 1e-4         # learning rate of the actor
+- LR_CRITIC = 3e-4        # learning rate of the critic
+- WEIGHT_DECAY = 0.0001   # L2 weight decay
+- LEAKINESS = 0.01
+
