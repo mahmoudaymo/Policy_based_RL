@@ -53,5 +53,14 @@ The best performance was achieved by **DDPG** where the reward of +30 was achiev
 - WEIGHT_DECAY = 0.0001   # L2 weight decay
 - LEAKINESS = 0.01
 
-The Actor Neural Networks use the following architecture :
+The **Actor** Neural Networks use the following architecture :
+The **Actor Neural Networks** use the following architecture :
+
+```
+Input nodes (33) 
+  -> Fully Connected Layer (256 nodes, Leaky Relu activation) 
+    -> Batch Normlization
+      -> Fully Connected Layer (128 nodes, Leaky Relu activation) 
+         -> Ouput nodes (4 nodes, tanh activation)
+```
 
