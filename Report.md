@@ -53,3 +53,5 @@ The best performance was achieved by **DDPG** where the reward of +30 was achiev
 - WEIGHT_DECAY = 0.0001   # L2 weight decay
 - LEAKINESS = 0.01
 
+The Actor Neural Networks use the following architecture :
+
